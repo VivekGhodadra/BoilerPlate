@@ -15,21 +15,9 @@ const DrawerContent = ({}) => {
 
     const [State, setState] = useState({ isEnable: theme === item?.value });
 
-    const onValueChange = async v => {
-      setNewTheme(item.value);
-      if (item.value !== theme) setState(v);
-    };
-
     return (
       <View style={styles.renderContainer}>
         <RNText>{item.label}</RNText>
-        <Switch
-          trackColor={{ false: Colors.placeholder, true: Colors.Primary }}
-          thumbColor={Colors.White}
-          ios_backgroundColor={Colors.placeholder}
-          onValueChange={onValueChange}
-          value={State.isEnable}
-        />
       </View>
     );
   };
@@ -58,7 +46,7 @@ const useStyles = () => {
     renderContainer: {
       ...RNStyles.flexRowBetween,
       borderBottomWidth: 1,
-      borderBottomColor: Colors.placeholder,
+      borderBottomColor: Colors.Placeholder,
       marginVertical: hp(0.5),
       paddingVertical: hp(2),
       paddingHorizontal: wp(2),

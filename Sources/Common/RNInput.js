@@ -29,7 +29,7 @@ const RNInput = React.forwardRef((props, ref) => {
       ref={ref}
       editable={editable}
       placeholder={placeholder}
-      placeholderTextColor={placeholderTextColor ?? Colors.N9A9A9A}
+      placeholderTextColor={placeholderTextColor ?? Colors.Placeholder}
       style={[styles.input, style]}
       onKeyPress={onKeyPress}
       onChange={onChange}

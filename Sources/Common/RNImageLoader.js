@@ -5,10 +5,7 @@ import RNStyles from './RNStyles';
 const RNImageLoader = ({ visible, containerStyle, size, color }) => {
   return visible ? (
     <View style={[RNStyles.imageLoading, containerStyle]}>
-      <ActivityIndicator
-        size={size ?? 'large'}
-        color={color ?? Colors.N726E3E}
-      />
+      <ActivityIndicator size={size ?? 'large'} color={color ?? Colors.Black} />
     </View>
   ) : null;
 };

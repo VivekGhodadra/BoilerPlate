@@ -4,10 +4,7 @@ import { Colors, hp } from '../Theme';
 const RNPagginationLoader = ({ size, color, style }) => {
   return (
     <View style={[styles.Box, style]}>
-      <ActivityIndicator
-        size={size || 'large'}
-        color={color || Colors.N726E3E}
-      />
+      <ActivityIndicator size={size || 'large'} color={color || Colors.Black} />
     </View>
   );
 };

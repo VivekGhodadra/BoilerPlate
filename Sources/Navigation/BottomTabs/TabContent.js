@@ -55,13 +55,10 @@ const TabContent = ({ state, descriptors, navigation }) => {
               resizeMode={'contain'}
               style={[
                 styles.icons,
-                { tintColor: isFocused ? Colors.Blue : Colors.Black },
+                { tintColor: isFocused ? Colors.Black : Colors.White },
               ]}
             />
-            <RNText
-              pTop={hp(1)}
-              // color={isFocused ? Colors.N00ADEE : Colors.Black}
-              size={FontSize.font8}>
+            <RNText pTop={hp(1)} size={FontSize.font8}>
               {label}
             </RNText>
           </TouchableOpacity>
@@ -73,7 +70,7 @@ const TabContent = ({ state, descriptors, navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    backgroundColor: Colors.LightGrey,
+    backgroundColor: Colors.Red,
     height: hp(10),
     paddingHorizontal: wp(4),
     paddingBottom: isIOS ? hp(2) : 0,

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Image } from 'react-native';
+import RNStyles from './RNStyles';
 
 const RNImage = ({ source, resizeMode, style }) => {
   return (
     <Image
       source={source}
       resizeMode={resizeMode || 'contain'}
-      style={[{ width: '100%', height: '100%' }, style]}
+      style={[RNStyles.image100, style]}
     />
   );
 };

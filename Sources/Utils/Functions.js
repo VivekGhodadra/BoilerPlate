@@ -5,24 +5,6 @@ const ALERT = ({ Title, Text, Buttons }) => Alert.alert(Title, Text, Buttons);
 
 const OpenUrl = url => Linking.openURL(url);
 
-const AddCharacter = ({ text, after, character }) => {
-  if (!text) false;
-  after = after || 4;
-  var v = text.replace(/[^\dA-Z]/g, ''),
-    reg = new RegExp('.{' + after + '}', 'i'); // i for only one and g for globally...
-  return v.replace(reg, function (a) {
-    return a + character;
-  });
-};
-
-const setUser = async data =>
-  await AsyncStorage.setItem('user', JSON.stringify(data));
-
-const getUser = async () => {
-  const value = await AsyncStorage.getItem('user');
-  return JSON.parse(value);
-};
-
 const setAppData = async data => {
   const previousValue = await getAppData();
   if (previousValue) {

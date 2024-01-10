@@ -19,7 +19,7 @@ const RNButton = ({ title, style, textStyle, onPress, disable }) => {
 const styles = StyleSheet.create({
   Container: {
     ...RNStyles.center,
-    backgroundColor: Colors.Blue,
+    backgroundColor: Colors.Primary,
     paddingVertical: hp(1.5),
     paddingHorizontal: wp(4),
     marginHorizontal: wp(4),

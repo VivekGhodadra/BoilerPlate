@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: wp(3),
     paddingTop: isIOS ? hp(6) : hp(1.5),
     borderBottomWidth: 1,
-    borderBottomColor: Colors.DBDBDB,
+    borderBottomColor: Colors.Placeholder,
   },
   Left: {
     ...RNStyles.center,
