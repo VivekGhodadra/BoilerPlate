@@ -1,1 +1,1 @@
-"# BoilerPlate" 
+BoilerPlate for React Native.
