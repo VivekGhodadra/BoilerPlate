@@ -30,9 +30,6 @@ const ToPercentage = ({ value, total }) => {
 const Functions = {
   ALERT,
   OpenUrl,
-  AddCharacter,
-  setUser,
-  getUser,
   setAppData,
   getAppData,
   ToPercentage,

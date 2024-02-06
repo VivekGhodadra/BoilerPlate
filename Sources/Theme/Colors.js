@@ -3,7 +3,6 @@ const Colors = {
   White: '#ffffff',
   Transparent: 'transparent',
   Red: '#ff0000',
-  Placeholder: '#9A9A9A',
   Green: '#00FF00',
   Blue: '#0000FF',
   Yellow: '#FFFF00',
@@ -12,6 +11,7 @@ const Colors = {
   Orange: '#FFA500',
   Purple: '#A020F0',
   Primary: '#0275d8',
+  Placeholder: '#9A9A9A',
 };
 
 export default Colors;

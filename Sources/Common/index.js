@@ -9,3 +9,4 @@ export { default as RNPagginationLoader } from './RNPagginationLoader';
 export { default as RNText } from './RNText';
 export { default as RNImage } from './RNImage';
 export { default as RNGradient } from './RNGradient';
+export { default as RNStyles } from './RNStyles';
